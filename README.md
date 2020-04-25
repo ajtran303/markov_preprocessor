@@ -1,8 +1,8 @@
-# markov_preprocessor.rb
+# nlp_preprocessor.rb
 
 ## What is this?
 
-This script preprocesses text files to be used as input data for Markov Chain generation.
+This script preprocesses text files to be used as input data for natural language processing.
 
 It reduces any given text file input into "one big string" formatted for spacing and punctuation.
 
@@ -12,7 +12,7 @@ The output is a new text file in the present directory.
 
 ### Run it in the command line with a text file :
 ```zsh
-$ ruby markov_preprocessor.rb rose_sample.txt
+$ ruby nlp_preprocessor.rb rose_sample.txt
 ```
 
 ### Input file: rose_sample.txt
