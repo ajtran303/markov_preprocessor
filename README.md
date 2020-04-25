@@ -1,6 +1,8 @@
 # markov_preprocessor
 
-This script will preprocess text files to be used as input data for Markov Chain generation.
+This script preprocesses text files to be used as input data for Markov Chain generation.
+
+It reduces any given text file input into "one big string" formatted for spacing and punctuation.
 
 The sample text provided is from *New Rose Hotel*, by William Gibson.
 
@@ -9,9 +11,10 @@ The sample text provided is from *New Rose Hotel*, by William Gibson.
 It runs in the command line with a text file argument:
 
 ```zsh
-$ ruby preprocessor_sample.rb rose_sample.txt
-$ => rose_sample_clipped.txt
+$ ruby preprocessor_sample.rb text_file.txt
 ```
+
+It generates a new "clipped" file in the present working directory.
 
 ## Input: rose_sample.txt
 
