@@ -29,19 +29,17 @@ class Preprocessor
     line.lstrip
   end
 
-  # It joins the array into ONE BIG STRING
-
-  def k_str
-    k_arr.join
+  def token_arr
+    k_arr.join.split(" ")
   end
 
   public
 
-  # It writes the ONE BIG STRING into a new file
+  # It writes the token array into a new file
 
   def create_clip
     clip_file = File.open("#{@file_name}_clipped.txt", "w")
-    clip_file.write(k_str)
+    clip_file.write(token_arr)
     clip_file.close
   end
 
